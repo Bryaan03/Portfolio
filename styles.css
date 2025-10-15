@@ -1,0 +1,54 @@
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #111827;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.contenu {
+    text-align: center;
+}
+
+.titre {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.statut {
+    font-size: 1.25rem;
+    color: #9ca3af;
+    margin-bottom: 2rem;
+}
+
+.badge-statut {
+    display: inline-block;
+    padding: 0.5rem 1.25rem;
+    border-radius: 100px;
+    background-color: #374151;
+    font-size: 0.850rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.section-contact {
+    margin-top: 3rem;
+}
+
+.contact {
+    font-size: 0.875rem;
+    color: #6b7280;
+}
+
+.lien-contact {
+    color: #60a5fa;
+    text-decoration: underline;
+    transition: color 0.2s;
+    margin-left: 0.5rem;
+}
+.lien-contact:hover {
+    color: #93c5fd;
+}
