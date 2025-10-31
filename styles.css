@@ -1,54 +1,254 @@
+:root {
+    --bg-dark: #111827;
+    --bg-light: #1f2937;
+    --border-color: #374151;
+    --text-primary: #e5e7eb;
+    --text-secondary: #9ca3af;
+    --text-tertiary: #6b7280;
+    --accent-blue: #3b82f6;
+    --accent-blue-light: #60a5fa;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     font-family: 'Inter', sans-serif;
-    background-color: #111827;
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 100vh;
-    margin: 0;
+    background-color: var(--bg-dark);
+    color: var(--text-primary);
+    line-height: 1.6;
 }
 
-.contenu {
-    text-align: center;
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
 }
 
-.titre {
-    font-size: 3rem;
+h1, h2, h3 {
+    color: var(--text-primary);
     margin-bottom: 1rem;
 }
 
-.statut {
+p {
+    color: var(--text-secondary);
+    margin-bottom: 1rem;
+}
+
+a {
+    color: var(--accent-blue-light);
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+a:hover {
+    color: var(--accent-blue);
+}
+
+.navbar {
+    background-color: var(--bg-light);
+    border-bottom: 1px solid var(--border-color);
+    padding: 1rem 0;
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    font-family: 'Source Code Pro', monospace;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+
+.navbar ul a {
+    font-family: 'Source Code Pro', monospace;
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--text-secondary);
+}
+
+.navbar ul a:hover {
+    color: var(--accent-blue-light);
+}
+
+.navbar ul a.active {
+    color: var(--accent-blue);
+    font-weight: 700;
+}
+
+.banner {
+    text-align: center;
+    padding: 5rem 0;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.banner-subtitle {
+    display: block;
     font-size: 1.25rem;
-    color: #9ca3af;
-    margin-bottom: 2rem;
+    color: var(--text-secondary);
+    margin-bottom: 0.5rem;
 }
 
-.badge-statut {
+.banner-name {
+    display: block;
+    font-size: 4rem;
+    font-weight: 700;
+    color: var(--accent-blue);
+}
+
+.banner-desc {
+    font-size: 1.25rem;
+    color: var(--text-secondary);
+}
+
+.accent {
+    color: var(--accent-blue);
+}
+
+main {
+    padding: 2rem 0;
+}
+
+section {
+    margin-bottom: 3rem;
+    margin-top: 2rem;
+}
+
+section h2 {
+    font-size: 1.8rem;
+    font-family: 'Source Code Pro', monospace;
+    border-bottom: 2px solid var(--border-color);
+    padding-bottom: 0.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.icons {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.icons img:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+}
+
+.page-title {
+    margin: 3rem;
+    text-align: center;
+    font-size: 2.5rem;
+    font-family: 'Source Code Pro', monospace;
+    color: var(--accent-blue);
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+}
+
+.project-card {
+    background-color: var(--bg-light);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+}
+
+.project-card h3 {
+    color: var(--accent-blue-light);
+    font-size: 1.25rem;
+}
+
+.project-desc {
+    font-size: 0.95rem;
+    flex-grow: 1;
+}
+
+.project-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.project-link { 
     display: inline-block;
-    padding: 0.5rem 1.25rem;
-    border-radius: 100px;
-    background-color: #374151;
-    font-size: 0.850rem;
-    text-transform: uppercase;
-    letter-spacing: 0.05em;
+    background-color: var(--accent-blue);
+    color: var(--text-primary);
+    padding: 0.6rem 1rem;
+    border-radius: 5px;
+    text-align: center;
+    font-weight: 600;
+    transition: background-color 0.2s ease;
+} 
+         
+.project-link:hover { 
+    background-color: var(--accent-blue-light);
+    color: var(--bg-dark);
 }
 
-.section-contact {
-    margin-top: 3rem;
+.footer {
+    text-align: center;
+    padding: 2rem 0;
+    margin-top: 2rem;
+    border-top: 1px solid var(--border-color);
+    color: var(--text-tertiary);
+    font-size: 0.9rem;
 }
 
-.contact {
-    font-size: 0.875rem;
-    color: #6b7280;
+.footer-link {
+    color: var(--text-secondary);
+    font-weight: 600;
 }
 
-.lien-contact {
-    color: #60a5fa;
-    text-decoration: underline;
-    transition: color 0.2s;
-    margin-left: 0.5rem;
+.footer-link:hover {
+    color: var(--accent-blue-light);
 }
-.lien-contact:hover {
-    color: #93c5fd;
+
+@media (max-width: 400px) {
+    .navbar .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 0.75rem;
+        width: 100%;
+        margin-top: 0.5rem;
+    }
+
+    .navbar ul li a {
+        display: block;
+        width: 100%;
+        padding: 0.5rem 0;
+    }
+
+    .logo {
+        font-size: 1.2rem;
+        margin-bottom: 0.5rem;
+    }
 }

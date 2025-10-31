@@ -3,33 +3,71 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio - Bientôt Prêt</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Bryan | Portfolio</title>
+    <link rel="stylesheet" href="styles.css"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Source+Code+Pro:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
 
-    <div class="contenu">
-        
-        <h1 class="titre">
-            Portfolio
-        </h1>
-        
-        <p class="statut">
-            En cours de <span style="color: #3b82f6; font-weight: 600;">développement</span>.
-        </p>
-        
-        <div class="badge-statut">
-            En construction ...
-        </div>
-
-        <div class="section-contact">
-            <p class="contact">
-                Contact : 
-                <a href="mailto:detresbryaan@gmail.com" class="lien-contact">detresbryaan@gmail.com</a>
-            </p>
-        </div>
-
+<nav class="navbar">
+    <div class="container">
+        <div class="logo">Bryan Detres</div>
+        <ul>
+            <li><a href="index.html" class="active">// Accueil</a></li>
+            <li><a href="projets.html">// Projets</a></li>
+        </ul>
     </div>
+</nav>
+
+<header class="banner">
+    <div class="container">
+        <h1 class="banner-title">
+            <span class="banner-subtitle">Bonjour, </span>
+            <span class="banner-name accent">Bryan Detres</span>
+        </h1>
+        <p class="banner-desc">Étudiant et futur développeur passionné.</p>
+    </div>
+</header>
+
+<main class="container">
+    <section class="about">
+        <h2><span class="accent">></span> Profil</h2>
+        <p>
+            Bienvenue sur mon portfolio, où je partage mon parcours et mes créations.
+        </p>
+        <p>
+            Je suis actuellement étudiant en 2ème année de BUT Informatique à l'IUT de Lens, passionné par le développement et les nouvelles technologies. 
+            J'aime apprendre et résoudre des problèmes complexes. Mon objectif est de devenir un développeur compétent et polyvalent.
+        </p>
+    </section>
+
+    <section class="skills">
+        <h2><span class="accent">></span> Compétences</h2>
+        <div class="icons">
+            <img src="https://skillicons.dev/icons?i=java&theme=dark" alt="Java" title="Java" />
+            <img src="https://skillicons.dev/icons?i=python&theme=dark" alt="Python" title="Python" />
+            <img src="https://skillicons.dev/icons?i=flask&theme=dark" alt="Flask" title="Flask" />
+            <img src="https://skillicons.dev/icons?i=php&theme=dark" alt="PHP" title="PHP" />
+            <img src="https://skillicons.dev/icons?i=laravel&theme=dark" alt="Laravel" title="Laravel" />
+            <img src="https://skillicons.dev/icons?i=html&theme=dark" alt="HTML" title="HTML" />
+            <img src="https://skillicons.dev/icons?i=css&theme=dark" alt="CSS" title="CSS" />
+            <img src="https://skillicons.dev/icons?i=postgresql&theme=dark" alt="PostgreSQL" title="PostgreSQL" />
+            <img src="https://skillicons.dev/icons?i=sqlite&theme=dark" alt="SQLite" title="SQLite" />
+            <img src="https://skillicons.dev/icons?i=mysql&theme=dark" alt="MySQL" title="MySQL" />
+            <img src="https://skillicons.dev/icons?i=bash&theme=dark" alt="Bash" title="Bash" />
+            <img src="https://skillicons.dev/icons?i=git&theme=dark" alt="Git" title="Git" />
+        </div>
+    </section>
+</main>
+
+<footer class="footer">
+    <div class="container">
+        <p>Contact : <a href="mailto:detresbryaan@gmail.com" class="footer-link">detresbryaan@gmail.com</a></p>
+        <p>&copy; 2025 Bryan Detres</p>
+    </div>
+</footer>
 
 </body>
 </html>
